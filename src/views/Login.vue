@@ -2,7 +2,7 @@
  * @Author: zzs 2650317325@qq.com
  * @Date: 2023-11-13 14:39:38
  * @LastEditors: zzs 2650317325@qq.com
- * @LastEditTime: 2023-12-01 08:58:44
+ * @LastEditTime: 2023-12-13 16:30:50
  * @FilePath: \vue3-project\src\views\Login.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -12,10 +12,10 @@ User
     <div class="container">
         <div class="login-container">
             <el-form label-width="100px" :model="formLabelAlign" ref="ruleFormRef">
-                <el-form-item label="账号:">
+                <el-form-item label="账号1:">
                     <el-input v-model="formLabelAlign.userAccount" />
                 </el-form-item>
-                <el-form-item label="密码:" prop="pass">
+                <el-form-item label="密码1:" prop="pass">
                     <el-input v-model="formLabelAlign.userPwd" type="password" autocomplete="off" />
                 </el-form-item>
                 <el-button type="primary" @click="onSubmit(ruleFormRef)">登录</el-button>
