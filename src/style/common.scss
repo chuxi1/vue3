@@ -1,0 +1,148 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+    // background-color: #f5f5f5;
+}
+
+/* 常用 flex */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-justify-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* 移动端的时候由于屏幕变小隐藏头部导航栏 */
+@media screen and ( max-width: 540px ) {
+  .app-breadcrumb{
+    display: none!important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+
+  height: 20px;
+
+  background-color: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  *//*background-image: linear-gradient(#133ea2, #8707dd);
+  */background-image: linear-gradient(#aaaab1, #cbc8cde7);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 全局定义 */
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-10 {
+  margin-top : 10px;
+}
+
+
+/** 设置滚动条 **/
+// ::-webkit-scrollbar {
+//   width: 7px;
+//   height:8px;
+// }
+
+
+// ::-webkit-scrollbar-track {
+//   background-color: rgb(207, 219, 230);
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   //background: rgba(0, 0, 0, 0.6);
+//   background-color:  rgb(15, 71, 122);
+//   //background-color: rgba(144, 147, 153, 0.3);
+//   border-radius: 2px;
+//   box-shadow: inset rgb(55, 58, 61);
+//   -webkit-border-radius: 2px;
+//   -moz-border-radius: 2px;
+//   -ms-border-radius: 2px;
+//   -o-border-radius: 2px;
+// }
+
+
+/* nprogress样式 */
+// #nprogress .bar {
+//   background: $primaryColor !important;
+// }
+// #nprogress .spinner-icon {
+//   border-top-color: $primaryColor !important;
+//   border-left-color: $primaryColor !important;
+// }
+// #nprogress .peg {
+//   box-shadow: 0 0 10px $primaryColor, 0 0 5px $primaryColor !important;
+// }
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.app-container-inner{
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 12px 0 rgb(51, 50, 50);
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.layout-horizontal{
+  .header-icon{
+    color:#bfcbd9!important;
+  }
+  .el-dropdown-link{
+    color:#bfcbd9!important;
+  }
+}
+
+.el-pager li:focus {
+  border: none;
+}
+.el-dropdown:focus {
+  border: none;
+  outline: none!important;
+}
+.svg-icon:focus {
+  border: none!important;
+  outline: none!important;
+}
